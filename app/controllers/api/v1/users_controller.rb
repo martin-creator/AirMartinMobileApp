@@ -44,4 +44,28 @@ class Api::V1::UsersController < ApplicationController
         render json: {is_success: true}, status: :ok
     end
 
+    def add_card
+        user = User.find(current_user.id)
+
+        if user.stripe_id.blank?
+            customer = Stripe::Customer.create(
+                email: user.email
+            )
+
+            user.stripe_id = customer.id
+            user.save
+        else
+            customer = Stripe::Customer.retrieve(user.stripe_id)
+        end
+
+        logger.debug(params[:stripe_token])
+        Stripe::Customer.create_source(customer.id,
+        source: params[:stripe_id]
+        )
+
+        render json: {is_success: true}, status: :ok
+    rescue Stripe::CardError => e
+        render json: {error: e.message, is_success: false }, status: :not_found
+    end
+
 end
