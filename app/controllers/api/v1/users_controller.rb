@@ -36,7 +36,7 @@ class Api::V1::UsersController < ApplicationController
 
     def logout
         user = User.find_by(access_token:  params[:access_token])
-        logger.debug {"Value of params" + params[:access_token]}
+        #logger.debug {"Value of params" + params[:access_token]}
 
         user.generate_authentication_token
         user.save

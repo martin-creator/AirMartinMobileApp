@@ -6,3 +6,4 @@ module Authenticate
     def authenticate_with_token!
         render json: {error: "Not Authenticate", is_success: false},  status: :unauthorized unless current_user.present?
     end
+end
