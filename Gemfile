@@ -50,4 +50,10 @@ gem 'geocoder', '~>1.4'
 
 gem 'stripe', '~> 7.0'
 
+gem 'active_model_serializers', '~> 0.10.0', require: true # converts model data to json output
+
+gem 'koala', '~> 3.0.0' # used to fetch data from facebook
+
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+
 
