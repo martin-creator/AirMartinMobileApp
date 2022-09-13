@@ -65,4 +65,14 @@ class Api::V1::RoomsController < ApplicationController
             render json: {error: "Invalid ID", is_succes: false, status: 422}
         end
     end
+
+    def your_listings
+        rooms = current_user.rooms
+        render json: {
+            rooms: rooms.map { |r| r.attributes.merge(image: r.cover_photo('medium'), instant: r.instant != "Request" ) },
+            is_success: true
+        }, status: :ok
+    end
+
+    
 end

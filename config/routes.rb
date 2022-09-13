@@ -6,7 +6,12 @@ Rails.application.routes.draw do
       post '/facebook' => 'users#facebook'
       post '/payments' => 'users#add_card'
 
-      resources :rooms
+      resources :rooms do
+      member do
+        get '/reservations', to: 'reservations#reservations_by_room'
+      end
+      end
+      resources : reservations
     end
   end
 end
