@@ -42,4 +42,29 @@ class Api::V1::RoomsController < Api::V1::BaseController
      def reservation_params
         params.require(:reservation).permit(:start_date, end_date)
      end
+
+     def charge(room, reservation)
+        if reservation.user.stripe_id.blank? && room.user.merchant_id.blank?
+            customer = Stripe::Customer.retrieve(reservation.user.stripe_id)
+            charge = Stripe::Charge.create(
+                :customer => customer.id,
+                :amount => reservation.total * 100,
+                :description => room.listing_name,
+                :currency => 'usd',
+                :destination => {
+                    :amount => reservation.total * 80,
+                    :account => room.user.merchant_id
+                }
+            )
+            
+            if charge
+                reservation.Approved!
+            else
+                reservation.Declined!
+            end
+        end
+    rescue Stripe::CardError => e
+        reservation.declined!
+        render json: {error: e.message, is_success: false}, status: 404
+    end
 end
