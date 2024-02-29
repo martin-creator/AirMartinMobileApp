@@ -1,0 +1,325 @@
+repo_name: martin-creator/AirMartinMobileApp
+report_id: 5d89d3ef1577918aff270a15502a6c4a
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T19:52:44+00:00'
+requested_by: martin-creator
+provider: github
+branch: master
+detected_tools_count: 23
+tools:
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp
+  detection_source: Repo Metadata
+- name: Rails
+  description: Web development that doesn't hurt
+  website_url: http://rubyonrails.org/
+  version: 5.0.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/990/x57_Lorv.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: SQLite
+  description: A software library that implements a self-contained, serverless, zero-configuration,
+    transactional SQL database engine
+  website_url: http://www.sqlite.org/
+  open_source: false
+  hosted_saas: true
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1071/sqlite.jpg
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp
+  detection_source: Repo Metadata
+- name: Puma
+  description: A Modern, Concurrent Web Server for Ruby
+  website_url: http://puma.io/
+  version: 3.12.6
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Web Servers
+  image_url: https://img.stackshare.io/service/1055/favicon.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: Rails Spring
+  description: Rails application preloader
+  website_url: https://github.com/rails/spring
+  version: 2.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Rails Testing
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: RubyGems
+  description: Easily download, install, and use ruby software packages on your system
+  website_url: https://rubygems.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: Heroku
+  description: Build, deliver, monitor and scale web apps and APIs with a trail blazing
+    developer experience.
+  website_url: https://www.heroku.com
+  open_source: false
+  hosted_saas: true
+  category: Application Hosting
+  sub_category: Platform as a Service
+  image_url: https://img.stackshare.io/service/133/3wgIDj3j.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: Paperclip
+  description: A file attachment management for ActiveRecord
+  website_url: https://github.com/thoughtbot/paperclip
+  open_source: true
+  hosted_saas: false
+  category: Assets and Media
+  sub_category: File Uploads
+  image_url: https://img.stackshare.io/service/2542/AqsQWFu-_400x400.jpg
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: Stripe
+  description: Payments for developers
+  website_url: https://stripe.com
+  open_source: false
+  hosted_saas: true
+  category: Payments
+  sub_category: Payment Services
+  image_url: https://img.stackshare.io/service/97/eW6tXeq3.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: Twilio SendGrid
+  description: Email Delivery. Simplified.
+  website_url: http://sendgrid.com
+  open_source: false
+  hosted_saas: true
+  category: Communications
+  sub_category: Transactional Email
+  image_url: https://img.stackshare.io/service/43/kQ_6nwmP.jpg
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/config/environments/production.rb
+  detection_source: config/environments/production.rb
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: Devise
+  description: Flexible authentication solution for Rails with Warden
+  website_url: https://github.com/plataformatec/devise
+  version: 4.8.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: User Management and Authentication
+  image_url: https://img.stackshare.io/service/1432/devise.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: OmniAuth
+  description: OmniAuth is a flexible authentication system utilizing Rack middleware.
+  website_url: https://github.com/intridea/omniauth
+  version: 1.9.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: User Management and Authentication
+  image_url: https://img.stackshare.io/service/1433/omniauth.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: active_model_serializers
+  description: ActiveModel::Serializers allows you to generate your JSON in an object-oriented
+    and convention-driven manner
+  package_url: https://rubygems.org/active_model_serializers
+  version: 0.10.13
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19092/default_7d8fff827ba2485899e223ac4fb9773463ea4acd.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 06:17:18.000000000 Z
+- name: byebug
+  description: Byebug is a Ruby debugger
+  package_url: https://rubygems.org/byebug
+  version: 11.1.3
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18849/default_887cb273c504fac90d07fc552b7b223fbb32ca39.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: figaro
+  description: Simple
+  package_url: https://rubygems.org/figaro
+  version: 1.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19607/default_ad0710c65b106932707389deb3b2e0b93a1ef7b6.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 06:17:18.000000000 Z
+- name: geocoder
+  description: Provides object geocoding
+  package_url: https://rubygems.org/geocoder
+  version: 1.8.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19180/default_b505bfc0bd545bd0c4d20c61b61d3072a68d82c9.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: koala
+  description: Koala is a lightweight, flexible Ruby SDK for Facebook
+  package_url: https://rubygems.org/koala
+  version: 3.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19504/default_9507d505ecf2d6fecc582d9657a2ec76851b6113.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 06:17:18.000000000 Z
+- name: listen
+  description: The Listen gem listens to file modifications and notifies you about
+    the changes
+  package_url: https://rubygems.org/listen
+  version: 3.0.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18942/default_a51418802dbfb428c729400211798b5046fe4140.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: rack-cors
+  description: Middleware that will make Rack-based apps CORS compatible
+  package_url: https://rubygems.org/rack-cors
+  version: 1.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19489/default_235e01dd950d1f80c14beead28dc8c06a1dbf108.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+  vulnerabilities:
+  - name: Rack CORS Middleware has Insecure File Permissions
+    cve_id: CVE-2024-27456
+    cve_url: https://github.com/advisories/GHSA-785g-282q-pwvx
+    detected_date: Feb 27
+    severity: moderate
+    first_patched: 
+- name: spring
+  description: Preloads your application so things like console
+  package_url: https://rubygems.org/spring
+  version: 2.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19382/default_b8d34ca81aebc76c0b551b666a1d21df7e697544.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: sqlite3
+  description: This module allows Ruby programs to interface with the SQLite3 database
+    engine
+  package_url: https://rubygems.org/sqlite3
+  version: 1.3.13
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18820/default_6564ae059af6c4ea7065fd2329370c7a05341cf8.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 05:51:36.000000000 Z
+- name: tzinfo-data
+  description: TZInfo::Data contains data from the IANA Time Zone database packaged
+    as Ruby modules for use with TZInfo
+  package_url: https://rubygems.org/tzinfo-data
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19516/default_07037590725b871de29c1d2ebb4610950e953355.png
+  detection_source_url: https://github.com/martin-creator/AirMartinMobileApp/blob/master/Gemfile
+  detection_source: Gemfile
+  last_updated_by: martin-creator
+  last_updated_on: 2022-09-12 06:17:18.000000000 Z
