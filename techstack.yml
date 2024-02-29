@@ -2,7 +2,7 @@ repo_name: martin-creator/AirMartinMobileApp
 report_id: 5d89d3ef1577918aff270a15502a6c4a
 version: 0.1
 repo_type: Public
-timestamp: '2024-02-04T08:02:47+00:00'
+timestamp: '2024-02-29T19:52:44+00:00'
 requested_by: martin-creator
 provider: github
 branch: master
@@ -110,7 +110,7 @@ tools:
   last_updated_by: martin-creator
   last_updated_on: 2022-09-12 05:51:36.000000000 Z
 - name: Paperclip
-  description: 'A file attachment management for ActiveRecord '
+  description: A file attachment management for ActiveRecord
   website_url: https://github.com/thoughtbot/paperclip
   open_source: true
   hosted_saas: false
@@ -273,6 +273,13 @@ tools:
   detection_source: Gemfile
   last_updated_by: martin-creator
   last_updated_on: 2022-09-12 05:51:36.000000000 Z
+  vulnerabilities:
+  - name: Rack CORS Middleware has Insecure File Permissions
+    cve_id: CVE-2024-27456
+    cve_url: https://github.com/advisories/GHSA-785g-282q-pwvx
+    detected_date: Feb 27
+    severity: moderate
+    first_patched: 
 - name: spring
   description: Preloads your application so things like console
   package_url: https://rubygems.org/spring
